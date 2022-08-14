@@ -1,36 +1,41 @@
 :root {
   --branding-color: #b492ff;
-  --secondary-color: #f9f7fe;
-  --other-color: #272142bf;
-  --heading-font-family: "Playfair Display", serif;
-  --default-font-family: "Poppins", sans-serif;
+  --secondary-color: #f5f1ff;
+  --other-color: #272142d3;
+  --heading-font-family: "Aboreto", cursive;
+  --default-font-family: "Satisfy", cursive;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 46px !important;
   }
 
   h3 {
-    font-size: 26px !important;
-  }
-
-  img {
-    display: none;
+    font-size: 34px !important;
   }
 
   .hero {
     padding-top: 80px !important;
   }
+
+  .hero h2 {
+    font-size: 18px !important;
+  }
+
+  .container h2 {
+    font-size: 36px !important;
+  }
 }
 
 body {
-  font-family: var(--default-font-family);
+  font-family: var(--default-font-family) !important;
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 86px;
   color: black;
+  margin: 0;
 }
 
 h1,
@@ -39,20 +44,26 @@ h2 {
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 48px;
   margin: 0;
   color: var(--other-color);
 }
 
 img {
-  border-radius: 10px;
-  box-shadow: 0 0 10px var(--branding-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--other-color);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--branding-color);
+  font-family: var(--heading-font-family);
 }
 
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px 50px;
+  padding: 100px 20px 50px;
 }
 
 .hero h2 {
@@ -63,13 +74,13 @@ img {
 }
 
 .btn-branding {
-  background: var(--branding-color);
+  background: var(--branding-color) !important;
   box-shadow: 0 0 4px var(--other-color);
   border-radius: 4px;
   color: var(--secondary-color);
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 .btn-branding:hover {
@@ -79,17 +90,23 @@ img {
 
 .container h2 {
   text-align: center !important;
-  font-size: 52px;
+  font-size: 40px;
+  color: var(--branding-color);
 }
 
 .container p {
   text-align: justify;
-  color: var(--other-color);
+  font-family: "Varta", sans-serif;
+  font-size: 20px;
+  background-color: var(--secondary-color) !important;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.5;
 }
 
 .primary-link {
   border-radius: 4px;
-  padding: 15px 15px;
+  padding: 10px 30px;
   text-decoration: none;
   text-transform: capitalize;
   border: 1.5px solid var(--branding-color);
