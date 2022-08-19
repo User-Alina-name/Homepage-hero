@@ -126,12 +126,11 @@ img {
   box-shadow: 0 0 8px var(--other-color);
 }
 
-.about-section,
-.work-section {
+.content {
   padding: 120px 20px;
 }
 
-.about-content {
+.about-section {
   margin: 30px;
 }
 
@@ -144,6 +143,12 @@ img {
 .about-section h2 {
   font-size: 18px;
   font-family: var(--heading-font-family);
+}
+
+.about-section p {
+  text-align: justify;
+  font-family: var(--paragraph-font-family);
+  font-size: 20px !important;
 }
 
 .img-fluid {
