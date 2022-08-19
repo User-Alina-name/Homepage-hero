@@ -4,11 +4,12 @@
   --other-color: #272142d3;
   --heading-font-family: "Aboreto", cursive;
   --default-font-family: "Satisfy", cursive;
+  --paragraph-font-family: "Varta", sans-serif;
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 46px !important;
+    font-size: 42px !important;
   }
 
   h3 {
@@ -36,6 +37,7 @@ h1 {
   font-size: 86px;
   color: black;
   margin: 0;
+  text-align: center;
 }
 
 h1,
@@ -52,6 +54,10 @@ h3 {
 img {
   border-radius: 8px;
   box-shadow: 0 0 10px var(--other-color);
+}
+
+.navbar {
+  opacity: 70%;
 }
 
 .navbar-brand,
@@ -94,9 +100,10 @@ img {
   color: var(--branding-color);
 }
 
-.container p {
+.container p,
+.paragraph {
   text-align: justify;
-  font-family: "Varta", sans-serif;
+  font-family: var(--paragraph-font-family);
   font-size: 20px;
   background-color: var(--secondary-color) !important;
   padding: 20px;
@@ -117,4 +124,47 @@ img {
 .primary-link:hover {
   color: var(--other-color);
   box-shadow: 0 0 8px var(--other-color);
+}
+
+.about-section,
+.work-section {
+  padding: 120px 20px;
+}
+
+.about-content {
+  margin: 30px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: var(--default-font-family);
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--heading-font-family);
+}
+
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 0 8px var(--other-color);
+}
+
+.content h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: var(--default-font-family);
+}
+
+.content p {
+  font-size: 14px;
+  background: none !important;
+  line-height: 1.2;
+  padding: 0;
 }
