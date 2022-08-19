@@ -126,12 +126,10 @@ img {
   box-shadow: 0 0 8px var(--other-color);
 }
 
-.content {
-  padding: 120px 20px;
-}
-
-.about-section {
-  margin: 30px;
+.about-section,
+.work-section,
+.contact-section {
+  padding: 100px 20px;
 }
 
 .about-section h1 {
