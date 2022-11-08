@@ -17,7 +17,7 @@
   }
 
   footer p {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   .hero {
@@ -25,20 +25,34 @@
   }
 
   .hero h2 {
-    font-size: 18px !important;
+    font-size: 14px !important;
   }
 
   .hero p {
-    font-size: 20px !important;
+    font-size: 14px !important;
+  }
+
+  .content h1 {
+    font-size: 26px !important;
+    line-height: 1 !important;
   }
 
   .container h2 {
-    font-size: 36px !important;
+    font-size: 22px !important;
   }
 
   a.special {
+    margin: 10px !important;
     padding: 10px 14px !important;
     font-size: 13px !important;
+  }
+
+  .contact-section a {
+    font-size: 18px !important;
+  }
+
+  .contact-section h3 {
+    font-size: 18px !important;
   }
 }
 
@@ -84,6 +98,11 @@ footer .contacts {
   background: var(--secondary-color);
 }
 
+h2.m-5 {
+  font-size: 34px !important;
+  text-shadow: 0 0 2px var(--other-color);
+}
+
 a.special {
   margin: 20px;
   padding: 14px 20px;
@@ -102,6 +121,11 @@ a.special:hover {
 p a {
   color: var(--branding-color);
   text-decoration: none;
+}
+
+p a:hover {
+  color: var(--secondary-color);
+  text-shadow: 0 0 4px var(--other-color);
 }
 
 .bg-light {
@@ -131,6 +155,7 @@ p a {
   font-size: 24px;
   text-decoration: overline underline;
   font-family: var(--heading-font-family);
+  text-shadow: 0 0 2px var(--other-color);
 }
 
 .btn-branding {
@@ -144,7 +169,7 @@ p a {
 }
 
 .btn-branding:hover {
-  color: var(--other-color);
+  color: var(--other-color) !important;
   box-shadow: 0 0 8px var(--other-color);
 }
 
@@ -182,7 +207,7 @@ p a {
 
 .about-section,
 .work-section {
-  padding: 50px 20px;
+  padding: 70px 20px;
 }
 
 .about-section h1 {
@@ -196,7 +221,7 @@ p a {
   font-family: var(--heading-font-family);
 }
 
-.about-section p {
+.content p {
   text-align: justify;
   font-family: var(--paragraph-font-family);
   font-size: 20px !important;
@@ -205,6 +230,19 @@ p a {
 .img-fluid {
   border-radius: 10px;
   box-shadow: 0 0 8px var(--other-color);
+}
+
+.about-section img {
+  transition: 100ms ease-in;
+}
+
+.about-section img:hover {
+  box-shadow: 0 0 14px var(--other-color);
+  opacity: 90%;
+}
+
+.material-symbols-outlined {
+  font-size: 34px;
 }
 
 .content h1 {
@@ -227,16 +265,32 @@ p a {
 .contact-section {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .contact-section a {
   text-decoration: none;
   color: var(--branding-color) !important;
   font-size: 24px;
+  transition: 150ms ease-in;
 }
 
 .contact-section a:hover {
   color: white !important;
   background: var(--branding-color);
   border-radius: 4px;
+  padding: 2px;
+}
+
+.contact-footer {
+  position: relative;
+}
+
+p.contact-footer {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  margin-bottom: -8px;
 }
