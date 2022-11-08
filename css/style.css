@@ -15,9 +15,14 @@
   h3 {
     font-size: 34px !important;
   }
-
   footer p {
     font-size: 12px !important;
+  }
+
+  a.special {
+    margin: 10px !important;
+    padding: 10px 14px !important;
+    font-size: 13px !important;
   }
 
   .hero {
@@ -33,18 +38,12 @@
   }
 
   .content h1 {
-    font-size: 26px !important;
+    font-size: 30px !important;
     line-height: 1 !important;
   }
 
   .container h2 {
     font-size: 22px !important;
-  }
-
-  a.special {
-    margin: 10px !important;
-    padding: 10px 14px !important;
-    font-size: 13px !important;
   }
 
   .contact-section a {
@@ -292,5 +291,5 @@ p.contact-footer {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   bottom: 0;
-  margin-bottom: -8px;
+  margin-bottom: -6px;
 }
