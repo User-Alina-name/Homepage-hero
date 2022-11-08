@@ -16,6 +16,10 @@
     font-size: 34px !important;
   }
 
+  footer p {
+    font-size: 12px;
+  }
+
   .hero {
     padding-top: 80px !important;
   }
@@ -24,8 +28,17 @@
     font-size: 18px !important;
   }
 
+  .hero p {
+    font-size: 20px !important;
+  }
+
   .container h2 {
     font-size: 36px !important;
+  }
+
+  a.special {
+    padding: 10px 14px !important;
+    font-size: 13px !important;
   }
 }
 
@@ -34,7 +47,7 @@ body {
 }
 
 h1 {
-  font-size: 86px;
+  font-size: 62px;
   color: black;
   margin: 0;
   text-align: center;
@@ -56,34 +69,34 @@ img {
   box-shadow: 0 0 10px var(--other-color);
 }
 
-footer ul {
-  list-style: none;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  padding-left: 0;
-  color: var(--branding-color);
-  background: var(--secondary-color);
+footer {
+  margin-top: 50px;
 }
 
 footer h3 {
   font-size: 32px;
 }
 
-footer li {
-  margin: 20px;
-}
-
-footer {
-  margin: 30px auto;
-}
-
-button a {
+footer .contacts {
+  margin: 20px 0;
+  padding: 40px;
   color: var(--branding-color);
-  font-size: 24px;
+  background: var(--secondary-color);
 }
 
-button a:hover {
-  color: var(--other-color);
+a.special {
+  margin: 20px;
+  padding: 14px 20px;
+  font-size: 20px;
+  background: white;
+  border-radius: 50%;
+  color: var(--branding-color);
+  transition: all 200ms ease-in-out;
+}
+
+a.special:hover {
+  background: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 p a {
@@ -91,24 +104,8 @@ p a {
   text-decoration: none;
 }
 
-button.special {
-  margin: 0 20px;
-  padding: 10px 18px;
-  background: white;
-  border: 2px solid var(--branding-color);
-  border-radius: 70%;
-  color: var(--branding-color) !important;
-  transition: all 200ms ease-in-out;
-}
-
-button.special:hover {
-  background: var(--secondary-color);
-  border: 2px solid var(--other-color);
-  box-shadow: 0 0 4px var(--other-color);
-}
-
-.navbar {
-  opacity: 70%;
+.bg-light {
+  opacity: 90%;
 }
 
 .navbar-brand,
@@ -131,7 +128,9 @@ button.special:hover {
 }
 
 .hero p {
-  font-size: 34px;
+  font-size: 24px;
+  text-decoration: overline underline;
+  font-family: var(--heading-font-family);
 }
 
 .btn-branding {
@@ -182,9 +181,8 @@ button.special:hover {
 }
 
 .about-section,
-.work-section,
-.contact-section {
-  padding: 100px 20px;
+.work-section {
+  padding: 50px 20px;
 }
 
 .about-section h1 {
@@ -210,8 +208,7 @@ button.special:hover {
 }
 
 .content h1 {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 40px;
 }
 
 .content h3 {
@@ -242,13 +239,4 @@ button.special:hover {
   color: white !important;
   background: var(--branding-color);
   border-radius: 4px;
-}
-
-.phone {
-  color: var(--branding-color);
-  font-size: 20px;
-}
-
-.phone:hover {
-  color: var(--other-color);
 }
