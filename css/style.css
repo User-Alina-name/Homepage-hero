@@ -9,7 +9,7 @@
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 42px !important;
+    font-size: 36px !important;
   }
 
   h3 {
@@ -46,6 +46,10 @@
     font-size: 20px !important;
   }
 
+  h2.certificate.m-5 {
+    font-size: 24px !important;
+  }
+
   .contact-section a {
     font-size: 18px !important;
   }
@@ -59,11 +63,11 @@
   }
 
   .content p {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 
   .container p {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 }
 
