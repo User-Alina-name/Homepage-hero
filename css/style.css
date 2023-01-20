@@ -43,7 +43,7 @@
   }
 
   .container h2 {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 
   .contact-section a {
@@ -59,11 +59,11 @@
   }
 
   .content p {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
   .container p {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 }
 
@@ -190,6 +190,7 @@ p a:hover {
 .container h2 {
   text-align: center !important;
   font-size: 38px;
+  text-shadow: 0 0 2px var(--other-color);
   color: var(--branding-color);
 }
 
@@ -221,7 +222,7 @@ p a:hover {
 
 .about-section,
 .work-section {
-  padding: 70px 20px;
+  padding: 40px 20px;
 }
 
 .about-section h1 {
