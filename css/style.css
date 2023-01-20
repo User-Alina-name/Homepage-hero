@@ -1,5 +1,5 @@
 :root {
-  --branding-color: #b492ff;
+  --branding-color: #b592ff;
   --secondary-color: #f5f1ff;
   --other-color: #272142d3;
   --heading-font-family: "Aboreto", cursive;
@@ -53,6 +53,18 @@
   .contact-section h3 {
     font-size: 18px !important;
   }
+
+  p.m-3 {
+    font-size: 10px !important;
+  }
+
+  .content p {
+    font-size: 12px !important;
+  }
+
+  .container p {
+    font-size: 12px !important;
+  }
 }
 
 body {
@@ -73,7 +85,7 @@ h2 {
 
 h3 {
   font-size: 48px;
-  margin: 0;
+  text-align: center;
   color: var(--other-color);
 }
 
@@ -83,7 +95,7 @@ img {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 footer h3 {
@@ -91,7 +103,7 @@ footer h3 {
 }
 
 footer .contacts {
-  margin: 20px 0;
+  margin: 0;
   padding: 40px;
   color: var(--branding-color);
   background: var(--secondary-color);
@@ -163,12 +175,16 @@ p a:hover {
   color: var(--secondary-color) !important;
   font-size: 18px;
   line-height: 27px;
-  padding: 10px 30px;
+  padding: 8px 20px;
 }
 
 .btn-branding:hover {
   color: var(--other-color) !important;
   box-shadow: 0 0 8px var(--other-color);
+}
+
+.projects .container {
+  margin-top: 100px;
 }
 
 .container h2 {
@@ -181,7 +197,7 @@ p a:hover {
 .paragraph {
   text-align: justify;
   font-family: var(--paragraph-font-family);
-  font-size: 20px;
+  font-size: 18px;
   background-color: var(--secondary-color) !important;
   padding: 20px;
   border-radius: 8px;
@@ -190,7 +206,7 @@ p a:hover {
 
 .primary-link {
   border-radius: 4px;
-  padding: 10px 30px;
+  padding: 8px 20px;
   text-decoration: none;
   text-transform: capitalize;
   border: 1.5px solid var(--branding-color);
@@ -222,25 +238,22 @@ p a:hover {
 .content p {
   text-align: justify;
   font-family: var(--paragraph-font-family);
-  font-size: 20px !important;
+  font-size: 18px;
 }
 
 .img-fluid {
+  margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0 8px var(--other-color);
 }
 
-.about-section img {
+.about-section .certificates {
   transition: 100ms ease-in;
 }
 
-.about-section img:hover {
+.about-section .certificates:hover {
   box-shadow: 0 0 14px var(--other-color);
   opacity: 90%;
-}
-
-.material-symbols-outlined {
-  font-size: 34px;
 }
 
 .content h1 {
@@ -253,17 +266,9 @@ p a:hover {
   font-family: var(--default-font-family);
 }
 
-.content p {
-  font-size: 14px;
-  background: none !important;
-  line-height: 1.2;
-  padding: 0;
-}
-
 .contact-section {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
 }
 
 .contact-section a {
